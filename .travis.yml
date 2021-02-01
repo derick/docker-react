@@ -6,5 +6,5 @@ services:
 before_install:
   - docker build -t derickh/docker-react -f Dockerfile.dev .
 
-  script:
-    - docker run -e CI=true derickh/docker-react npm run test -- --coverage
+script:
+  - docker run -e CI=true derickh/docker-react npm run test -- --coverage
